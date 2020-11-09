@@ -10,6 +10,8 @@ import {
 import fire from '../assets/fire.jpg';
 import air from '../assets/air.jpg';
 import water from '../assets/water.jpg';
+import earth from '../assets/earth.jpg';
+
 import '../styles/SlideShow.css'
 
 
@@ -28,6 +30,11 @@ const photos = [
     element: water,
     altText: 'A picture of the ocean',
     caption: 'Water'
+  },
+  {
+    element: earth,
+    altText: 'A picture of the desert',
+    caption: 'Earth'
   }
 ];
 

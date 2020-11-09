@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
+import '../styles/NavBar.css';
+
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 
@@ -10,9 +10,16 @@ function NavBar() {
 
 
   return (
-    <div>
+    <div className="nav-container">
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">Lara Daruiz Yoga&Wine</NavbarBrand>
+        <NavbarBrand href="/" className="mr-auto">
+          <h1 className="brand-headline">
+            <span className="text-logo">lara daruiz</span>
+            <span className="text-logo hide">&#10023;</span>
+            <span className="text-logo">yoga & wine</span>
+          </h1>
+        </NavbarBrand>
+
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
 
         <Collapse isOpen={!collapsed} navbar>
@@ -35,8 +42,6 @@ function NavBar() {
           </Nav>
         </Collapse>
       </Navbar>
-
-
     </div>
   )
 }

@@ -1,0 +1,33 @@
+.nav-container {
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+  background-color: #edf2f4;
+  opacity: .7;
+}
+.brand-headline { 
+  width: 50%;
+  height: 8vh;
+  display: flex;
+  flex-flow: column;
+  font-size: 1.2em;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+@media screen and(min-width:575px){
+  .brand-headline {
+    flex-direction: row;
+    font-size: 1.5em;
+  }
+}
+
+.text-logo {
+  color: #b804b8;
+  padding: 0 .3em;
+}
+
+
+
+
