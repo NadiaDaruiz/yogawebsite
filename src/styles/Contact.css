@@ -1,0 +1,10 @@
+.container {
+  width: 80%;
+  height: 67vh;
+
+}
+
+.contact-headline {
+  text-align: center;
+  padding: .5em 0;
+}

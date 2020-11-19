@@ -1,0 +1,28 @@
+.about-headline {
+  text-align: center;
+}
+.about-container {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-text-box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+}
+.about-title {
+  align-self:flex-start ;
+}
+.about-photo {
+  width: 30%;
+  height: auto;
+}

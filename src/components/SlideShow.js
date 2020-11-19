@@ -19,22 +19,22 @@ const photos = [
   {
     element: fire,
     altText: 'Image of fire',
-    caption: 'Fire'
+    caption: 'Manipura'
   },
   {
     element: air,
     altText: 'Picture of sky',
-    caption: 'Air'
+    caption: 'Anahata Vishuddha'
   },
   {
     element: water,
     altText: 'A picture of the ocean',
-    caption: 'Water'
+    caption: 'Svadisthana'
   },
   {
     element: earth,
     altText: 'A picture of the desert',
-    caption: 'Earth'
+    caption: 'Muladhara'
   }
 ];
 
@@ -69,7 +69,7 @@ const SlideShow = (props) => {
         onExited={() => setAnimating(false)}
       >
         <img className="carousel-image" src={photo.element} alt={photo.altText} />
-        <CarouselCaption className="text-danger" captionHeader={photo.caption} />
+        <CarouselCaption className="carousel-title" captionHeader={photo.caption} />
       </CarouselItem>
     );
   });

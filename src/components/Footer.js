@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div>
       <footer className="footer-container">
-        <p className="footer-text">Created by <a href="nadiadaruiz.com">Nadia Daruiz</a></p>
+        <p className="footer-text">All the rights reserved</p>
         <div className="footer-social-box">
           <FontAwesomeIcon className="log-icons" icon={faInstagramSquare} />
           <FontAwesomeIcon className="log-icons" icon={faLinkedin} />

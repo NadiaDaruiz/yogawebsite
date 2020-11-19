@@ -1,33 +1,20 @@
 import React from 'react';
-import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import '../styles/Contact.css';
 
 
 function Contact() {
   return (
     <div>
-      <Form>
-        <Row form >
-          <Col md={4}>
-            <FormGroup>
-              <Label for="name">Name</Label>
-              <Input type="text" name="name" id="name" placeholder="Your name" />
-            </FormGroup>
-          </Col>
-          <Col md={4}>
-            <FormGroup>
-              <Label for="email">Email</Label>
-              <Input type="email" name="email" id="email" placeholder="Your email" />
-            </FormGroup>
-          </Col>
-        </Row>
-
-        <FormGroup>
-          <Label for="message">Message</Label>
-          <Input type="textarea" name="message" id="message" placeholder="Write your message here" />
-        </FormGroup>
-
-        <Button>Sent</Button>
-      </Form>
+      <h2 className="contact-headline">Contact</h2>
+      <div className="container">
+        <p className="contact-text">Do you have any questions? I'm always available for  tea and a nice talk. </p>
+        <h4 className="contact-info"> Email</h4>
+        <p className="info">lara.daruiz@gmail.com</p>
+        <h4 className="contact-info"> Phone</h4>
+        <p className="info">0123456789</p>
+        <h4 className="contact-info"> City</h4>
+        <p className="info"> Berlin, Germany</p>
+      </div>
     </div>
   )
 }

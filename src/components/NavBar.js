@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../styles/NavBar.css';
-
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Link } from "react-router-dom";
 
+import '../styles/NavBar.css';
 
 function NavBar() {
   const [collapsed, setCollapsed] = useState(true);
@@ -12,32 +12,44 @@ function NavBar() {
   return (
     <div className="nav-container">
       <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">
+        <NavbarToggler onClick={toggleNavbar} className="mr-2 nav-logo" />
+        <NavbarBrand href="/">
           <h1 className="brand-headline">
-            <span className="text-logo">lara daruiz</span>
-            <span className="text-logo hide">&#10023;</span>
-            <span className="text-logo">yoga & wine</span>
+            <span className="text-brand">lara daruiz</span>
+            <span className="text-brand star">&#10023; </span>
+            <span className="text-brand">yoga & wine</span>
           </h1>
         </NavbarBrand>
-
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-
         <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
+          <Nav navbar >
             <NavItem>
-              <NavLink to="/about">About</NavLink>
+              <NavLink>
+                <Link to="/about" style={{ color: "black" }}>About</Link>
+              </NavLink>
             </NavItem>
+
             <NavItem>
-              <NavLink to="/yogaintegral">Yoga Integral</NavLink>
+              <NavLink>
+                <Link to="/yogaintegral" style={{ color: "black" }}>Yoga Integral</Link>
+              </NavLink>
             </NavItem>
+
             <NavItem>
-              <NavLink to="/yogaandwine">Yoga and Wine</NavLink>
+              <NavLink>
+                <Link to="/yogaandwine" style={{ color: "black" }}>Yoga and Wine</Link>
+              </NavLink>
             </NavItem>
+
             <NavItem>
-              <NavLink to="/practice">Practice</NavLink>
+              <NavLink>
+                <Link to="/practice" style={{ color: "black" }}>Practice</Link>
+              </NavLink>
             </NavItem>
+
             <NavItem>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink>
+                <Link to="/contact" style={{ color: "black", }}>Contact</Link>
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>

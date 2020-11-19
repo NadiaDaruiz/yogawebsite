@@ -1,0 +1,24 @@
+
+.yoga-integral-container {
+  width: 100%;
+  /* background-color: #f2f5f7; */
+}
+.yoga-integral-headline {
+  padding: .5em 0;
+  text-align: center;
+}
+.yoga-integral-photo {
+  width: 100%;
+}
+.yoga-integral-text-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.text-group {
+  width: 45%;
+  text-align: start;
+  padding: 1em;
+}
