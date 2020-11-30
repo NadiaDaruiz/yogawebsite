@@ -11,13 +11,13 @@ function NavBar() {
 
   return (
     <div className="nav-container">
-      <Navbar color="faded" light>
+      <Navbar light>
         <NavbarToggler onClick={toggleNavbar} className="mr-2 nav-logo" />
         <NavbarBrand href="/">
           <h1 className="brand-headline">
-            <span className="text-brand">lara daruiz</span>
-            <span className="text-brand star">&#10023; </span>
-            <span className="text-brand">yoga & wine</span>
+            <span className="text-brand">Lara Daruiz</span>
+            <span className="text-brand star">&#10023;</span>
+            <span className="text-brand">Yoga & Wine</span>
           </h1>
         </NavbarBrand>
         <Collapse isOpen={!collapsed} navbar>

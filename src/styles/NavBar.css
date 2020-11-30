@@ -1,15 +1,16 @@
 .nav-container {
   width: 100%;
   font-family: 'Dancing Script', cursive;
-  background-color: #adb5bd;
+  /* background-color: #adb5bd; */
+  background-color: #FAFCFF;
   opacity: .7;
 }
 .brand-headline { 
   width: 100%;
-  height: 8vh;
+  /* height: 8vh; */
   display: flex;
   flex-flow: column;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .star {
   display: none;
@@ -19,7 +20,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
   .star {
     display: block;
@@ -31,11 +32,11 @@
 }
 .navbar-light .nav-logo .navbar-toggler-icon  {
   background-image: url("../assets/logo-pink.png"); 
-  font-size: 38px;
+  font-size: 40px;
 }
 .text-brand {
   color: #b804b8;
-  padding: 0 .3em;
+  padding: 0 .1em;
 }
 
 

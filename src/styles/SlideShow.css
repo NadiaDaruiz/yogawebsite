@@ -1,16 +1,21 @@
-
-.custom-tag {
+.container-slides {
   width: 100%;
-  height: 500px;  
+
+}
+.custom-tag {
+  height: 100%;  
 }
 .carousel-image {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 500px;
 }
 .carousel-title h3 { 
   color: #b804b8;
   font-weight: 600;
+  text-align: center;
 }
+
+
 
 
 

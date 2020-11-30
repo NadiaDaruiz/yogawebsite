@@ -5,10 +5,10 @@ import '../styles/YogaAndWine.css';
 function YogaAndWine() {
   return (
     <div>
-      <h2 className="yoga-wine-headline">Yoga and Wine </h2>
+      <h2 className="headline"><span className="underline">Yoga and Wine</span></h2>
       <div className="wine-container">
-        <img src={wine} alt="" className="yoga-wine-photo" />
-        <div className="yoga-wine-text-box">
+        <img src={wine} alt="two small pics of meditation and wine" className="wine-photo shadow-box" />
+        <div className="wine-text-box">
           <p>
             My two passions in life are the practice of yoga and the magical world of wine.
          </p>

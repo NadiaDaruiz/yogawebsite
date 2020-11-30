@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch } from "react-router-dom";
 
 import NavBar from "./NavBar";
 import Footer from "./Footer";
@@ -12,11 +12,10 @@ import Contact from "./Contact";
 
 import "../styles/App.css";
 
-
 function App() {
   return (
     <div className="app-container">
-      <NavBar />
+      <NavBar className="nav-space" />
       <Switch>
         <Route exact path="/" component={SlideShow} />
         <Route path="/about" component={About} />
@@ -25,7 +24,7 @@ function App() {
         <Route path="/practice" component={Practice} />
         <Route path="/contact" component={Contact} />
       </Switch>
-      <Footer />
+      <Footer className="footer-space" />
     </div>
   );
 }

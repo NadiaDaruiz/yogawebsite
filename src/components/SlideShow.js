@@ -19,7 +19,7 @@ const photos = [
   {
     element: fire,
     altText: 'Image of fire',
-    caption: 'Manipura'
+    caption: ''
   },
   {
     element: air,
@@ -34,7 +34,7 @@ const photos = [
   {
     element: earth,
     altText: 'A picture of the desert',
-    caption: 'Muladhara'
+    caption: ''
   }
 ];
 
@@ -75,7 +75,7 @@ const SlideShow = (props) => {
   });
 
   return (
-    <div>
+    <div className="container-slides">
       <Carousel
         className="space"
         activeIndex={activeIndex}

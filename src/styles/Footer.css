@@ -1,27 +1,93 @@
 .footer-container {
-  height: 8vh;
+  height: auto;
   width: 100%;
-  padding: 0 .5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 30px;
+  text-align: center;
+  background-color: #FAFCFF;
+  /* background-color: black; */
   font-family: 'Dancing Script', cursive;
-  background-color: #adb5bd;
-  color: #b804b8;
 }
-.footer-text {
-  margin: auto 0;
-  font-size: 1.5em;
-}
+
 .footer-social-box {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 1.5em;
+  display: inline;
+  list-style: none;
+  margin: auto;
 }
-.log-icons {
-  margin: 0 .4em;
+ul li {
+  display: inline;
+  margin: 0 10px;
 }
+
+.facebook .social-link {
+  background-color: #3b5998;
+}
+.linkedin .social-link  {
+  background-color: #007bb7;
+}
+.instagram .social-link {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.footer-social-box .social-link:hover .social-icon{ 
+  color: #fff;
+}
+
+.circle li .social-link  {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  font-size: 22px;
+}
+.social-link {
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+}
+.circle li .social-link:hover .social-icon, .triggeredHover {
+  -moz-transform: rotate(360deg); 
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.circle .social-link {
+  color: #ccd8ea;
+} 
+
+@media (max-width: 350px){
+  ul.footer-social-box li {
+    display: inline;
+    margin: 0 2px;
+  }
+  .circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .circle li i {
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
 
