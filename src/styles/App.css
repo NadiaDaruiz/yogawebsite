@@ -5,9 +5,9 @@
   justify-content: center;
 }
 .headline {
-  padding: .5em;
+  padding: .3em 0 1em;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.25em;
   font-family: 'Dancing Script', cursive; 
   animation: textshadow 8s infinite alternate; 
 }
@@ -20,6 +20,12 @@
               0 4px 4px rgba(0,0,0,0.11), 
               0 6px 8px rgba(0,0,0,0.11),
               0 8px 16px rgba(0,0,0,0.11);
+}
+
+@media (min-width: 1025px) {
+  .headline {
+    font-size: 2.5em;
+  }
 }
 
 @keyframes textshadow {

@@ -4,13 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import Sparkle from 'react-sparkle';
 
 
 
 function Footer() {
+
   return (
-    <div>
-      <footer className="footer-container">
+    <div style={{ position: 'relative' }}>
+      <Sparkle color='random' flickerSpeed={'slowest'} flicker={true} count={50} fadeOutSpeed={50} />
+      <footer className="footer-container" >
         <ul className="footer-social-box circle">
           <li className="instagram">
             <a href="https://www.instagram.com/unadanzacosmica/" className="social-link">

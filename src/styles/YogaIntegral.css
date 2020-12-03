@@ -30,9 +30,9 @@
     align-items: center;
     justify-content: flex-start;
   }
-  .integral-photo img {
+  .integral-photo {
     width: 95%;
-
+    max-height: 450px ;
   }     
 
     

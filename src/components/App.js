@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import Sparkle from 'react-sparkle';
 
 import NavBar from "./NavBar";
 import Footer from "./Footer";

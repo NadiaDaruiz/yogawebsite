@@ -1,11 +1,11 @@
 .footer-container {
   height: auto;
   width: 100%;
-  padding: 30px;
+  padding: 40px;
   text-align: center;
-  background-color: #FAFCFF;
-  /* background-color: black; */
+  background-color: #343a40;
   font-family: 'Dancing Script', cursive;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 50px;
 }
 
 .footer-social-box {
