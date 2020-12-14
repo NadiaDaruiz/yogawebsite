@@ -1,43 +1,23 @@
 .wine-container {
-  height: 100%;
-  padding: 1em;
-  margin-bottom: .5em;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 50%;
+  row-gap: 2em;
+}
+.wine-text {
+  width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .wine-photo {
   width: 95%;
-  height: auto;
-}
-.wine-text-box {
-  width: 93%;
-  margin-top: 1em;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-.wine-text-box p {
-  text-align: justify;
+  margin-bottom: 2.5em; 
 }
 
-
-
-@media (min-width: 1025px) {
-  .wine-container {
-    flex-direction: row;
-  }
-  .wine-photo {
-    width: 40%;
-    padding-left: .5em;
-  }
-  .wine-text-box {
-    width: 60%;
-    padding: 2em;
-  } 
-  .wine-text-box p {
-    font-size: 1.15em;
-    line-height: normal;
+/* MQ */
+@media (min-width:600px){
+    .about-photo {
+      width: 87%;
   }
 }

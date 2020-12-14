@@ -7,12 +7,10 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import Sparkle from 'react-sparkle';
 
 
-
 function Footer() {
 
   return (
-    <div style={{ position: 'relative' }}>
-      <Sparkle color='random' flickerSpeed={'slowest'} flicker={true} count={50} fadeOutSpeed={50} />
+    <div className="sparkles-container">
       <footer className="footer-container" >
         <ul className="footer-social-box circle">
           <li className="instagram">
@@ -32,6 +30,8 @@ function Footer() {
           </li>
         </ul>
       </footer>
+
+      <Sparkle color='random' flickerSpeed={'slowest'} flicker={true} count={50} fadeOutSpeed={50} overflowPx={0} />
     </div>
   )
 }

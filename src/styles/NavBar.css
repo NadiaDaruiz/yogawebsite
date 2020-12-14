@@ -17,26 +17,8 @@
 .hide {
   display: none;
 }
-@media (min-width:575px){
-  .brand-headline {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 1.8em;
-  }
-  .star {
-    height: 100%;
-    width: auto;
-    display: block;
-    margin: auto 0;
-    font-size: .8em;
-  }
-  .hide {
-    display: block;
-  }
-}
 .navbar-nav {
-  font-family: monospace;
+  font-family:'Spectral', serif;
   padding: 0 .3em;
 }
 .navbar-light .nav-logo .navbar-toggler-icon  {
@@ -48,7 +30,33 @@
   padding: 0 .1em;
 }
 
+@media (min-width:758px){
+  .brand-headline {
+    animation: textshadow 8s infinite alternate; 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.8em;
+  }
+  .star {
+    height: 10%;
+    width: 10%;
+    display: block;
+  }
+  .hide {
+    display: block;
+  }
+}
 
+@keyframes textshadow {
+	0%   { text-shadow: 1px 1px 0px #333 }
+	10%  { text-shadow: 3px 3px 2px #333 }
+	20%  { text-shadow: 9px 10px 6px #999 }
+	40%  { text-shadow: 10px 15px 6px #ccc }
+	60%  { text-shadow: 0px 10px 4px #ccc }
+	80%  { text-shadow: -10px 8px 3px #ccc }
+	100% { text-shadow: 1px 5px 1px #eee }
+}
 
 
 

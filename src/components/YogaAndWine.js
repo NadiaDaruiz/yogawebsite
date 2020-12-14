@@ -1,17 +1,21 @@
 import React from 'react';
 import wine from '../assets/yoga_wine.jpg';
 import '../styles/YogaAndWine.css';
+import Sparkle from 'react-sparkle';
+
 
 function YogaAndWine() {
   return (
     <div>
-      <h2 className="headline"><span className="underline">Yoga and Wine</span></h2>
+      <div className="headline sparks-container">
+        <h2><span className="underline">Yoga and Wine</span></h2>
+        <Sparkle color='random' overflowPx={0} fadeOutSpeed={10} count={30} flickerSpeed={'slowest'} flicker={false} />
+      </div>
       <div className="wine-container">
-        <img src={wine} alt="two small pics of meditation and wine" className="wine-photo shadow-box" />
-        <div className="wine-text-box">
+        <div className="wine-text spacing">
           <p>
             My two passions in life are the practice of yoga and the magical world of wine.
-         </p>
+          </p>
           <p>
             As a yoga teacher, I have learned that it is more important to integrate, accept and express than to reject, resign and repress. So I believe that we could use the wonderful creation of wine as a tool to connect with our five senses and to be aware of all the aromas and textures that we have the capacity to feel and experience.
           </p>
@@ -23,6 +27,7 @@ function YogaAndWine() {
             Follow me on Instagram to know more details about date, place and prices.
           </p>
         </div>
+        <img src={wine} alt="two small pics of meditation and wine" className="wine-photo shadow-box" />
       </div>
     </div>
   )

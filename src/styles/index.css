@@ -1,8 +1,46 @@
-body {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Spectral', serif;
+/* ---------- RESET RULES ------------------- */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Spectral', serif;
+  position: relative;
+}
+
+/*------------- PATTERNS ------------------- */
+
+/* All the h2 */
+.headline {
+  text-align: center;
+  padding: 1.5em 0;
+}
+.headline h2 {
+  font-size: 2em;
+  font-family: 'Dancing Script', cursive; 
+}
+.underline  { 
+  border-bottom: 2px solid #b804b8;
+}
+/* spacing */
+.spacing {
+  padding: 0 1em;
+  text-align: justify;
+}
+
+/* img shadows */
+.shadow-box {
+   box-shadow:0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
 }
 
 
+.sparks-container {
+  position: relative;
+}
+  

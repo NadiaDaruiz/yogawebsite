@@ -1,14 +1,18 @@
 import React from 'react';
 import '../styles/YogaIntegral.css';
 import integral from '../assets/integral.jpg';
+import Sparkle from 'react-sparkle';
 
 
 function YogaIntegral() {
   return (
     <div>
-      <h2 className="headline"><span className="underline">Yoga Integral Philosophy</span></h2>
+      <div className="headline sparks-container">
+        <h2><span className="underline">Yoga Integral</span></h2>
+        <Sparkle color='random' overflowPx={0} fadeOutSpeed={10} count={60} flickerSpeed={'slowest'} flicker={false} />
+      </div>
       <div className="integral-container">
-        <div className="integral-text-box">
+        <div className="integral-text spacing">
           <div className="inline-container">
             <p>
               Integral Yoga (or Purna Yoga) was created by Sri Aurobindo (1872-1950) in Pondicherry (South India).
@@ -22,7 +26,7 @@ function YogaIntegral() {
               Yoga Integral differs from traditional forms of yoga in that it does not encourage abandonment of the world or worldly obligations, but rather seeks to realize supramental awareness through a positive attitude in society.
             </p>
             <p>
-              I studied Yoga Integral in the Asociación Bonaerese of Yoga, in Argentina. The president, founder of the association and my teacher is <em>Ricardo García</em>. I learn from him and from my other teachers <em> Rocío Blazques, Fernando Dayan y Tomás Berengan Mendaña</em>. They teach me everything I know and I still continue learning from them.
+              I studied Yoga Integral in the Asociación Bonaerese of Yoga, in Argentina. The president, founder of the association and my teacher is <em>Ricardo García</em>. I learn from him and from my other teachers <em>Rocío Blazques, Fernando Dayan y Tomás Berengan Mendaña</em>. They teach me everything I know and I still continue learning from them.
             </p>
           </div>
         </div>

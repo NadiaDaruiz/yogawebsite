@@ -7,15 +7,22 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
-import fire from '../assets/fire.jpg';
-import air from '../assets/air.jpg';
-import water from '../assets/water.jpg';
-import earth from '../assets/earth.jpg';
+import fire from '../assets/fire.png';
+import air from '../assets/air.png';
+import water from '../assets/water.png';
+import earth from '../assets/earth.png';
+import yoga from '../assets/yoga_loto.png';
+
 
 import '../styles/SlideShow.css'
 
 
 const photos = [
+  {
+    element: yoga,
+    altText: 'Image of a lotus in water',
+    caption: ''
+  },
   {
     element: fire,
     altText: 'Image of fire',
@@ -24,12 +31,12 @@ const photos = [
   {
     element: air,
     altText: 'Picture of sky',
-    caption: 'Anahata Vishuddha'
+    caption: ''
   },
   {
     element: water,
     altText: 'A picture of the ocean',
-    caption: 'Svadisthana'
+    caption: ''
   },
   {
     element: earth,
@@ -69,7 +76,7 @@ const SlideShow = (props) => {
         onExited={() => setAnimating(false)}
       >
         <img className="carousel-image" src={photo.element} alt={photo.altText} />
-        <CarouselCaption className="carousel-title" captionHeader={photo.caption} />
+        <CarouselCaption captionHeader={photo.caption} />
       </CarouselItem>
     );
   });
@@ -82,7 +89,7 @@ const SlideShow = (props) => {
         next={next}
         previous={previous}
       >
-        <CarouselIndicators items={photos} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        {/* <CarouselIndicators items={photos} activeIndex={activeIndex} onClickHandler={goToIndex} /> */}
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
         <CarouselControl direction="next" directionText="Next" onClickHandler={next} />

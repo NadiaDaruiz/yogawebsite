@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Sparkle from 'react-sparkle';
 
 import NavBar from "./NavBar";
 import Footer from "./Footer";
@@ -15,8 +14,9 @@ import "../styles/App.css";
 
 function App() {
   return (
-    <div className="app-container">
+    <div id="app-container">
       <NavBar className="nav-space" />
+
       <Switch>
         <Route exact path="/" component={SlideShow} />
         <Route path="/about" component={About} />
@@ -25,9 +25,9 @@ function App() {
         <Route path="/practice" component={Practice} />
         <Route path="/contact" component={Contact} />
       </Switch>
+
       <Footer className="footer-space" />
     </div>
   );
 }
-
 export default App;
