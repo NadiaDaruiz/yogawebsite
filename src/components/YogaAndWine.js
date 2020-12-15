@@ -11,7 +11,7 @@ function YogaAndWine() {
         <h2><span className="underline">Yoga and Wine</span></h2>
         <Sparkle color='random' overflowPx={0} fadeOutSpeed={10} count={30} flickerSpeed={'slowest'} flicker={false} />
       </div>
-      <div className="wine-container">
+      <section className="wine-container">
         <div className="wine-text spacing">
           <p>
             My two passions in life are the practice of yoga and the magical world of wine.
@@ -28,7 +28,7 @@ function YogaAndWine() {
           </p>
         </div>
         <img src={wine} alt="two small pics of meditation and wine" className="wine-photo shadow-box" />
-      </div>
+      </section>
     </div>
   )
 }

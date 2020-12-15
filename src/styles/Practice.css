@@ -1,17 +1,35 @@
 .practice-container {
   display: grid;
   justify-items: center;
-  grid-template-rows: 1fr 1fr 1fr 18%;
-  row-gap: 1em;
+  grid-template-rows: 1fr;
 }
 .practice-text, .practice-dates {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 90%;
+  padding-bottom: 1em;
 }
 .practice-photo {
   width: 95%;
-  /* align-self: stretch; */
-  margin-bottom: 2.5em;
+  display: block;
+  margin: 1em auto 2em;
+}
+.yoga-icon {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .practice-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .practice-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .yoga-icon {
+    width: 20%;
+    height: auto;
+    display: block;
+    padding: 1em 0;
+    margin: auto 0;
+  }
 }

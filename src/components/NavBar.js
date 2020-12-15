@@ -15,7 +15,6 @@ function NavBar() {
         <NavbarToggler onClick={toggleNavbar} className="mr-2 nav-logo" />
         <NavbarBrand href="/">
           <h1 className="brand-headline">
-
             <span className="text-brand">Lara Daruiz</span>
             <img src={sparkles} alt="three stars" className="star" />
             <span className="text-brand hide">Yoga & Wine</span>

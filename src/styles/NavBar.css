@@ -8,11 +8,13 @@
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: column;
+  flex-direction: row;
+  justify-content: flex-end;
   font-size: 1.4em;
 }
 .star {
-  display: none;
+  height: 15%;
+  width: 15%;
 }
 .hide {
   display: none;
@@ -33,15 +35,9 @@
 @media (min-width:758px){
   .brand-headline {
     animation: textshadow 8s infinite alternate; 
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     font-size: 1.8em;
-  }
-  .star {
-    height: 10%;
-    width: 10%;
-    display: block;
   }
   .hide {
     display: block;
