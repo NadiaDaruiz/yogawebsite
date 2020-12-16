@@ -69,10 +69,10 @@ function NavBar() {
 
             <NavItem>
               <NavLink>
-                <Link to="https://yogaandwinewithlara.wordpress.com/"
+                <a rel="noopener noreferrer" href="https://yogaandwinewithlara.wordpress.com/" target="_blank"
                   onClick={toggleNavbar}
                   style={{ color: "black" }}>Blog
-                </Link>
+                </a>
               </NavLink>
             </NavItem>
           </Nav>
