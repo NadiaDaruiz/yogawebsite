@@ -12,7 +12,7 @@
   margin-bottom: 2.5em;
 }
 
-@media (min-width: 768px){
+@media (min-width: 900px){
   .contact-container {
     grid-template-columns: 1fr 1fr;
   }

@@ -1,16 +1,14 @@
 import React from 'react';
 import '../styles/Practice.css';
 import practice from '../assets/practice.jpg';
-import Sparkle from 'react-sparkle';
 import yogaIcon from "../assets/yoga.png";
 
 
 function Practice() {
   return (
     <div>
-      <div className="headline sparks-container">
-        <h2><span className="underline">Practice</span></h2>
-        <Sparkle color='random' overflowPx={0} fadeOutSpeed={10} count={60} flickerSpeed={'slowest'} flicker={false} />
+      <div className="headline">
+        <h2>Practice</h2>
       </div>
       <section className="practice-container spacing">
         <div className="practice-text">
@@ -20,12 +18,12 @@ function Practice() {
           <img className="yoga-icon" src={yogaIcon} alt="yoga symbol" />
         </div>
         <div className="practice-dates">
-          <h6><strong>ONLINE LESSONS</strong></h6>
+          <h6><span className="underline"><strong>ONLINE LESSONS</strong></span></h6>
           <p>Tuesday and Thursday (spanish) at 9.00 am (ARG) and 13.00 pm (DE)</p>
           <p>Tuesday and Thursday (english) at 11.00 am (DE)</p>
           <p>Private lessons online are also possible.</p>
 
-          <h6><strong>PRIVATE LESSONS AT HOME</strong></h6>
+          <h6><span className="underline"><strong>PRIVATE LESSONS AT HOME</strong></span></h6>
           <p>Only available in Neukölln, Kreuzberg, Friedirichshain, Berlin.</p>
           <p>For <strong>special workshops</strong>, follow me on instagram to keep update.</p>
         </div>

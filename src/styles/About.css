@@ -12,9 +12,14 @@
 
 }
 /* MQ */
-@media (min-width:768px) {
+@media (min-width:900px) {
     .about-container {
       grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:1024px) {
+    .about-text {
+      padding: 0 1em;
     }
 }
 

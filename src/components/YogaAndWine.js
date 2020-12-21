@@ -1,15 +1,13 @@
 import React from 'react';
 import wine from '../assets/yoga_wine.jpg';
 import '../styles/YogaAndWine.css';
-import Sparkle from 'react-sparkle';
 
 
 function YogaAndWine() {
   return (
     <div>
-      <div className="headline sparks-container">
-        <h2><span className="underline">Yoga and Wine</span></h2>
-        <Sparkle color='random' overflowPx={0} fadeOutSpeed={10} count={30} flickerSpeed={'slowest'} flicker={false} />
+      <div className="headline">
+        <h2>Yoga and Wine</h2>
       </div>
       <section className="wine-container">
         <div className="wine-text spacing">

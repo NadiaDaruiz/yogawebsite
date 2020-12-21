@@ -1,16 +1,15 @@
 import React from 'react';
 import '../styles/About.css';
 import about from '../assets/about.jpg';
-import Sparkle from 'react-sparkle';
+
 
 
 function About() {
   return (
     <div>
       <main>
-        <div className="headline sparks-container">
-          <h2><span className="underline">About</span></h2>
-          <Sparkle color='random' overflowPx={0} fadeOutSpeed={10} count={30} flickerSpeed={'slowest'} flicker={false} />
+        <div className="headline">
+          <h2>About</h2>
         </div>
         <section className="about-container">
           <div className="about-text spacing">

@@ -19,10 +19,10 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={SlideShow} />
-        <Route path="/about" component={About} />
-        <Route path="/yogaintegral" component={YogaIntegral} />
         <Route path="/yogaandwine" component={YogaAndWine} />
+        <Route path="/yogaintegral" component={YogaIntegral} />
         <Route path="/practice" component={Practice} />
+        <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
       </Switch>
 

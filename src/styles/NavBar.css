@@ -1,8 +1,12 @@
 .nav-container {
   width: 100%;
   font-family: 'Dancing Script', cursive;
-  /* background-color: lightgray; */
-  opacity: .7;
+}
+.spakles {
+  position: relative;
+}
+.link-landing {
+  cursor: pointer;
 }
 .brand-headline { 
   width: 100%;
@@ -13,8 +17,7 @@
   font-size: 1.4em;
 }
 .star {
-  height: 15%;
-  width: 15%;
+ display: none;
 }
 .hide {
   display: none;
@@ -32,9 +35,15 @@
   padding: 0 .1em;
 }
 
+@media (min-width:350px) {
+  .star {
+    height: 15%;
+    width: 15%;
+    display: block;
+  }
+}
 @media (min-width:758px){
   .brand-headline {
-    animation: textshadow 8s infinite alternate; 
     justify-content: flex-end;
     align-items: center;
     font-size: 1.8em;
@@ -44,15 +53,7 @@
   }
 }
 
-@keyframes textshadow {
-	0%   { text-shadow: 1px 1px 0px #333 }
-	10%  { text-shadow: 3px 3px 2px #333 }
-	20%  { text-shadow: 9px 10px 6px #999 }
-	40%  { text-shadow: 10px 15px 6px #ccc }
-	60%  { text-shadow: 0px 10px 4px #ccc }
-	80%  { text-shadow: -10px 8px 3px #ccc }
-	100% { text-shadow: 1px 5px 1px #eee }
-}
+
 
 
 

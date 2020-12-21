@@ -12,29 +12,30 @@ html {
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Spectral', serif;
-}
-/*------------- Containers ------------------*/
-.sparks-container {
-  position: relative;
+  /* font-family: 'Libre Franklin', sans-serif; */
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
 }
 /*------------- PATTERNS ------------------- */
 
-/* All the h2 */
+/* All the h2 h6 */
+
 .headline {
+  animation: textshadow 8s infinite alternate; 
   text-align: center;
-  padding: 2.5em 0;
+  padding: 2em 0;
 }
 .headline h2 {
+  width: auto;
   font-size: 2em;
   font-family: 'Dancing Script', cursive; 
 }
 .underline  { 
-  border-bottom: 2px solid #b804b8;
+  border-bottom: 4px solid #b804b8;
 }
 /* spacing */
 .spacing {
-  padding: 0 1em;
+  padding: 0 0.5em;
   text-align: justify;
 }
 
@@ -55,4 +56,13 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
-  
+ 
+@keyframes textshadow {
+	0%   { text-shadow: 1px 1px 0px #333 }
+	10%  { text-shadow: 3px 3px 2px #333 }
+	20%  { text-shadow: 9px 10px 6px #999 }
+	40%  { text-shadow: 10px 15px 6px #ccc }
+	60%  { text-shadow: 0px 10px 4px #ccc }
+	80%  { text-shadow: -10px 8px 3px #ccc }
+	100% { text-shadow: 1px 5px 1px #eee }
+}

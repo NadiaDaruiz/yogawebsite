@@ -3,6 +3,8 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
 import { Link } from 'react-router-dom';
 import '../styles/NavBar.css';
 import sparkles from '../assets/sparkles.png';
+import Sparkle from 'react-sparkle';
+
 
 function NavBar() {
   const [collapsed, setCollapsed] = useState(true);
@@ -10,10 +12,10 @@ function NavBar() {
 
 
   return (
-    <div className="nav-container" >
+    <div className="nav-container sparkles" >
       <Navbar light>
         <NavbarToggler onClick={toggleNavbar} className="mr-2 nav-logo" />
-        <NavbarBrand href="/">
+        <NavbarBrand href="/" className="link-landing">
           <h1 className="brand-headline">
             <span className="text-brand">Lara Daruiz</span>
             <img src={sparkles} alt="three stars" className="star" />
@@ -24,9 +26,9 @@ function NavBar() {
           <Nav navbar >
             <NavItem>
               <NavLink>
-                <Link to="/about"
+                <Link to="/yogaandwine"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>About
+                  style={{ color: "black" }}>Yoga and Wine
                 </Link>
               </NavLink>
             </NavItem>
@@ -42,18 +44,18 @@ function NavBar() {
 
             <NavItem>
               <NavLink>
-                <Link to="/yogaandwine"
+                <Link to="/practice"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>Yoga and Wine
+                  style={{ color: "black" }}>Practice
                 </Link>
               </NavLink>
             </NavItem>
 
             <NavItem>
               <NavLink>
-                <Link to="/practice"
+                <Link to="/about"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>Practice
+                  style={{ color: "black" }}>About
                 </Link>
               </NavLink>
             </NavItem>
@@ -78,6 +80,7 @@ function NavBar() {
           </Nav>
         </Collapse>
       </Navbar>
+      <Sparkle color='random' flickerSpeed={'slow'} flicker={true} count={30} fadeOutSpeed={10} overflowPx={0} />
     </div>
   )
 }

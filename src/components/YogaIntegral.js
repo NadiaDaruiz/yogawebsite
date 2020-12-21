@@ -1,15 +1,14 @@
 import React from 'react';
 import '../styles/YogaIntegral.css';
 import integral from '../assets/integral.jpg';
-import Sparkle from 'react-sparkle';
+
 
 
 function YogaIntegral() {
   return (
     <div>
-      <div className="headline sparks-container">
-        <h2><span className="underline">Yoga Integral</span></h2>
-        <Sparkle color='random' overflowPx={0} fadeOutSpeed={10} count={60} flickerSpeed={'slowest'} flicker={false} />
+      <div className="headline">
+        <h2>Yoga Integral</h2>
       </div>
       <section className="integral-container">
         <div className="integral-text spacing">
