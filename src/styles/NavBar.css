@@ -8,6 +8,13 @@
 .link-landing {
   cursor: pointer;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+a .link:hover{
+  color: #b804b8;
+}
 .brand-headline { 
   width: 100%;
   height: auto;
@@ -23,7 +30,7 @@
   display: none;
 }
 .navbar-nav {
-  font-family:'Spectral', serif;
+  font-family: 'Overpass', sans-serif;
   padding: 0 .3em;
 }
 .navbar-light .nav-logo .navbar-toggler-icon  {

@@ -27,8 +27,9 @@ function NavBar() {
             <NavItem>
               <NavLink>
                 <Link to="/yogaandwine"
+                  className="link"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>Yoga and Wine
+                >Yoga and Wine
                 </Link>
               </NavLink>
             </NavItem>
@@ -36,8 +37,9 @@ function NavBar() {
             <NavItem>
               <NavLink>
                 <Link to="/yogaintegral"
+                  className="link"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>Yoga Integral
+                >Yoga Integral
                 </Link>
               </NavLink>
             </NavItem>
@@ -45,8 +47,9 @@ function NavBar() {
             <NavItem>
               <NavLink>
                 <Link to="/practice"
+                  className="link"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>Practice
+                >Practice
                 </Link>
               </NavLink>
             </NavItem>
@@ -54,8 +57,9 @@ function NavBar() {
             <NavItem>
               <NavLink>
                 <Link to="/about"
+                  className="link"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>About
+                >About
                 </Link>
               </NavLink>
             </NavItem>
@@ -63,8 +67,9 @@ function NavBar() {
             <NavItem>
               <NavLink>
                 <Link to="/contact"
+                  className="link"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>Contact
+                >Contact
                 </Link>
               </NavLink>
             </NavItem>
@@ -72,8 +77,9 @@ function NavBar() {
             <NavItem>
               <NavLink>
                 <a rel="noopener noreferrer" href="https://yogaandwinewithlara.wordpress.com/" target="_blank"
+                  className="link"
                   onClick={toggleNavbar}
-                  style={{ color: "black" }}>Blog
+                >Blog
                 </a>
               </NavLink>
             </NavItem>
