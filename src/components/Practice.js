@@ -19,9 +19,7 @@ function Practice() {
         </div>
         <div className="practice-dates">
           <h6><span className="underline"><strong>ONLINE LESSONS</strong></span></h6>
-          <p>Tuesday and Thursday (spanish) at 9.00 am (ARG) and 13.00 pm (DE)</p>
-          <p>Tuesday and Thursday (english) at 11.00 am (DE)</p>
-          <p>Private lessons online are also possible.</p>
+          <p>I offer group or private lessons.</p>
 
           <h6><span className="underline"><strong>PRIVATE LESSONS AT HOME</strong></span></h6>
           <p>Only available in Neukölln, Kreuzberg, Friedirichshain, Berlin.</p>

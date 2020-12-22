@@ -86,7 +86,7 @@ function NavBar() {
           </Nav>
         </Collapse>
       </Navbar>
-      <Sparkle color='random' flickerSpeed={'slow'} flicker={true} count={30} fadeOutSpeed={10} overflowPx={0} />
+      <Sparkle color='random' flickerSpeed={'slow'} flicker={true} count={40} fadeOutSpeed={20} overflowPx={0} />
     </div>
   )
 }

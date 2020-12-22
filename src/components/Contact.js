@@ -13,7 +13,7 @@ function Contact() {
       </div>
       <section className="contact-container">
         <div className="contact-text spacing">
-          <p>Do you have any questions? I'm always available for tea and a nice talk. </p>
+          <p>Do you have any questions? I'm always available for glass of wine and a nice talk. </p>
           <h6><span className="underline"><strong>EMAIL</strong></span></h6>
           <p>unadanzacosmica@gmail.com</p>
           <h6><span className="underline"><strong>PHONE</strong></span></h6>
